@@ -1,7 +1,5 @@
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import util.ServiceRequest;
-
 import java.io.File;
 import java.io.IOException;
 import java.net.URISyntaxException;
@@ -43,7 +41,7 @@ public class DiscountApplication {
 
         //write to file
         Path targetPath = Paths.get(DiscountApplication.class.getResource("/").toURI()).getParent();
-        File outputFile = new File(String.valueOf(targetPath + "/output.json"));
+        File outputFile = new File(targetPath + "/output.json");
         objectmapper.writeValue(outputFile, discountedProductDetails);
 
         System.out.println("Successfully associated each product with the appropriate discount!!");
