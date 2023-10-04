@@ -1,3 +1,5 @@
+package com.fd.app;
+
 public class Discount {
 
     public Discount(String discountTag, Double amount) {

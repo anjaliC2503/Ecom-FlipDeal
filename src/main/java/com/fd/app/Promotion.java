@@ -1,3 +1,5 @@
+package com.fd.app;
+
 import java.util.*;
 
 public enum Promotion {

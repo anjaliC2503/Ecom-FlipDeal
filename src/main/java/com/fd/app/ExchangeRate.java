@@ -1,3 +1,5 @@
+package com.fd.app;
+
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 import java.sql.Timestamp;
